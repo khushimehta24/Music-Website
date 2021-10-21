@@ -1,0 +1,55 @@
+@font-face {
+  font-family: MadeGentle;
+  src: url("../fonts/MADE\ Gentle\ PERSONAL\ USE.otf");
+}
+@font-face {
+  font-family: Shorelines;
+  src: url("../fonts/Shorelines\ Script\ Bold.otf");
+}
+
+.containerTab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.tab1cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 85%;
+  height: 15rem;
+  background-color: black;
+  border-radius: 17px;
+  padding: 2rem;
+}
+.tab1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8rem;
+}
+
+.helloImg {
+  width: 360px;
+  height: 294px;
+}
+
+.quoteTxt {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8rem;
+  line-height: 20px;
+  color: #b4b4b4;
+}
+
+.helloTxt {
+  font-family: MADE Mirage;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 45px;
+  color: #ecf3f4;
+}

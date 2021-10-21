@@ -1,0 +1,11 @@
+body{
+    background-color: #212128;
+}
+
+
+.artist-d-flex{
+    display: flex;
+    column-gap: 8px;
+    /* row-gap: 8px; */
+    flex-wrap: wrap;
+}

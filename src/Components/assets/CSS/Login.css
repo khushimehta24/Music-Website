@@ -1,0 +1,157 @@
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@font-face {
+  font-family: MadeGentle;
+  src: url("../fonts/MADE\ Gentle\ PERSONAL\ USE.otf");
+}
+@font-face {
+  font-family: Shorelines;
+  src: url("../fonts/Shorelines\ Script\ Bold.otf");
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.container img {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.87;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  height: 81vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typewriter {
+  color: rgb(255, 255, 255);
+  width: 32ch;
+  animation: typing 4s steps(22) infinite,
+    blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+.login {
+  width: 65%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #000000;
+  border-radius: 18px;
+  color: white;
+  margin: 5%;
+  /* margin-top: 20%; */
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input input {
+  border: none;
+  width: 370px;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.input label {
+  margin: 2px;
+  font-size: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.SignIn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 33px;
+  color: #ecf3f4;
+}
+
+.btnContainer {
+  margin: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: flex-start;
+}
+
+.forgotPwdBtn {
+  border: none;
+  background-color: transparent;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  cursor: pointer;
+  text-align: left;
+  color: #c4dcdf;
+}
+
+.LoginBtn {
+  width: 370px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  cursor: pointer;
+  line-height: 29px;
+}
+
+.createAccTxt {
+  color: #c4dcdf;
+  margin-top: 70px;
+  cursor: pointer;
+}
+
+.createAcc {
+  margin-top: 20px;
+}

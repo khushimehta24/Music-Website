@@ -1,0 +1,85 @@
+body{
+    background-color: #212128;
+}
+
+/* ------------------------------------FONTS------------------------------------ */
+@font-face {
+    font-family: MadeGentle;
+    src: url("../fonts/MADE\ Gentle\ PERSONAL\ USE.otf");
+}
+@font-face {
+    font-family: Shorelines;
+    src: url("../fonts/Shorelines\ Script\ Bold.otf");
+}
+
+
+
+.BgOfArtist{
+    width: 12rem;
+    height: 12rem;
+    background-color: rgba(0, 0, 0, 0.199);
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Artist{
+    width: 11rem;
+    height: 11rem;
+    border-radius: 17px;
+    transform: scale(1);
+    transition: 1s;
+}
+
+.artistbox:hover .Artist{
+    transform: scale(1.05);
+}
+
+
+
+/* ------------------------------------Artist Transition------------------------------------ */
+.artistHover{
+    width: 12rem;
+    height: 12rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.363), rgb(0, 0, 0));
+    position: absolute;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: all 1s cubic-bezier(0, 0.29, 0, 1.13);
+}
+
+.artistHover:hover{
+    opacity: 1;
+}
+
+.artistHover >*{
+    transform: translateY(20px);
+    transition: all 1s cubic-bezier(0, 0.29, 0, 1.13);
+
+}
+
+.artistHover:hover >*{
+    transform: translateY(0);
+}
+
+.ArtistName{
+    font-family: MadeGentle;
+    font-size: 1rem;
+    color: #e2eff1;
+}
+.CateArtist{
+    font-family: Shorelines;
+    font-size: 0.5rem;
+    color: #e2eff1;
+}
+
+
+.artistbox:hover .BgOfArtist{
+    background-color: black;
+}
